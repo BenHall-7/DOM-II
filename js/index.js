@@ -65,3 +65,16 @@ document.addEventListener("keyup", () => {
         img.style.animationPlayState = "paused";
     })
 })
+
+// 9: contextmenu
+document.addEventListener("contextmenu", ev => {
+    console.log("here");
+    ev.target.style.fontFamily = "Comic Sans MS";
+})
+
+// 10: mousedown
+document.querySelectorAll("p").forEach(p => {
+    p.addEventListener("mousedown", ev => {
+        ev.target.style.color = "blue";
+    })
+})
